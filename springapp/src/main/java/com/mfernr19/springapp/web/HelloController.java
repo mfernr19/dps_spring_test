@@ -24,4 +24,11 @@ public class HelloController {
 
         return new ModelAndView("hello.jsp");
     }
+    
+    public int sumaNumeros(){
+    	int numero1 = 4;
+    	int numero2 = 10;
+    	int suma = numero1+numero2;
+    	return suma;
+    }
 }

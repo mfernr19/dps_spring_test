@@ -14,5 +14,11 @@ public class HelloControllerTests {
         ModelAndView modelAndView = controller.handleRequest(null, null);		
         assertEquals("hello.jsp", modelAndView.getViewName());
     }
+    
+    @Test
+    public void testSumaNumeros(){
+    	HelloController controller = new HelloController();
+    	assertEquals(14,controller.sumaNumeros());
+    }
 
 }
